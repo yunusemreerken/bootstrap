@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kayıt formu</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-2">
+        <div class="row yuk">
+            <div class="col-md-7 mx-auto my-auto renk rounded-2 shadow">
+                <h2 class="display-5 text-center" style="text-transform: uppercase;">Kayıt Formu</h2>
+                <form action="" class="needs-validation" novalidate>
+                    <fieldset class="p-4 mb-3">
+                        <legend class="mb-3">Site Üyelik Formu</legend>
+                        <div class="row mb-3">
+                            <label for="adsoyad" class="col-md-3 col-form-label">Ad Soyad</label>
+                            <div class="col-md-9">
+                                <input type="text" id="adsoyad" placeholder="Ad Soyad Girin." class="form-control" required>
+                                <div class="valid-feedback">
+                                    tamamdır!
+                                  </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mb-3">
+                            <label for="email" class="col-md-3 col-form-label">E-mail Adres</label>
+                            <div class="col-md-9">
+                                <input type="text" id="email" placeholder="E-mail adresi Girin." class="form-control" required>
+                                <div class="valid-feedback">
+                                    tamamdır!
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="adres" class="col-form-label col-md-3">Adres</label>
+                            <div class="col-md-9">
+                                <div class="row mb-3">
+                                    <div class="col-md-6"><input type="text" id="adres" placeholder="şehir" class="form-control mb-3 mb-md-0 mb-lg-0" required></div>
+                                    <div class="col-md-6"><input type="text" id="adres" placeholder="ilçe" class="form-control" required></div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6"><input type="text"  id="adres"placeholder="posta kodu" class="form-control mb-3 mb-md-0 mb-lg-0" required></div>
+                                    <div class="col-md-6">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>türkiye</option>
+                                            <option value="1">azerbaycan</option>
+                                            <option value="2">pakistan</option>
+                                            <option value="3">türkmenistan</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="kayitnedeni" class="col-form-label col-md-3">Kayıt Nedeni</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto col-3">
+                            <button type="submit" class="btn btn-info ">Gönder</button>
+                        </div>
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>

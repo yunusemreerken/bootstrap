@@ -1,0 +1,59 @@
+html,
+body {
+    color: black;;
+}
+
+
+.home {
+    background: rgb(216,237,11);
+background: linear-gradient(90deg, rgba(216,237,11,1) 13%, rgba(189,27,27,1) 100%);
+}
+.example {
+    color : black;
+}
+.yuk {
+    height: 300px;
+    overflow:scroll;
+}
+.column-height {
+    height: 100px;;
+}
+.kutu {
+    height: 300px;
+    width: 300px;
+}
+.yukseklik {
+    height: 100vh;;
+}
+.logo {
+    height: 75px;;
+}
+.kapsayici {
+    background-color: #f37121;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; ;
+}
+.nav-link {
+    color: #111d5e;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 768px) {
+    .kapsayici {
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    } 
+    .nav-item {
+        margin-top: .5rem;;
+        transition: all .5s ease;
+    }
+    .nav-item:hover:not(.logo) {
+        background-color: #111d5e;
+        padding-left: 2rem;;
+    }
+    .nav-link:hover {
+        color: #f37121;
+        
+    }
+ }

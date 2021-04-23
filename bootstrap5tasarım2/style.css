@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: cadetblue;
+}
+.navbar-brand img{
+height: 50px;
+    
+}
+
+.carousel-item img {
+    height: 20rem;;
+}
+.search-box {
+    background-color: #dddddd;
+    border-radius: 5px;
+    border:2px solid #dadada;
+}

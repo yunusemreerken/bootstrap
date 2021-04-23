@@ -1,0 +1,50 @@
+html,body {
+    height: 1000px;
+}
+.line {
+    height: .1rem;
+    background-color:#ff0000;
+}
+.logo-contact {
+color: #00e676;
+}
+.logo-youtube {
+    color :#ff0000;
+}
+.logo-twitter {
+    color: #5DA9DD;
+}
+.news-carousel .carousel  .carousel-inner img {
+height: 20rem;
+}
+.news-carousel .card button:hover {
+    background-color: black;
+    color: white;
+}
+.economy-and-map .img {
+    height: 3rem;;
+}
+@media (max-width: 768px) { 
+.news-carousel .row {
+    flex-direction: column;
+
+}
+.news-carousel .row .card{
+    margin-top: 2rem;
+   width: 26rem !important;
+    
+}
+.economy-and-map .row {
+    flex-direction: column;
+}
+.economy-and-map .row .doviz-kurlari{
+    margin-top: 2rem;
+    width: 26rem !important ;
+}
+
+}
+
+
+.top-headline .card button:hover {
+    visibility: visible;
+}
